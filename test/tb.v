@@ -64,7 +64,7 @@ module tb();
         // test_immediate_write_read();
         // test_all_write_then_all_read();
         #(10*CLK_PERIOD) init_ks_string();
-        #(10*CLK_PERIOD) set_ks_period(32);
+        #(10*CLK_PERIOD) set_ks_period(30);
         #(10*CLK_PERIOD) pluck_ks_string();
         #(10*CLK_PERIOD) spi_read(8);
         #(10*CLK_PERIOD) spi_read(9);
