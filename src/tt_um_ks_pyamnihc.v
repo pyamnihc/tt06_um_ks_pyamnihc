@@ -15,7 +15,7 @@ module tt_um_ks_pyamnihc (
     localparam SPI_ADDR_WIDTH = 7;
     localparam SPI_DATA_WIDTH = 8;
     localparam SPI_NUM_CONFIG_REG = 8;
-    localparam SPI_NUM_STATUS_REG = 4;
+    localparam SPI_NUM_STATUS_REG = 2;
 
     // I2S param.
     localparam I2S_AUDIO_DW = 8;
@@ -92,8 +92,6 @@ module tt_um_ks_pyamnihc (
 
     assign status_arr[0] = 8'hC0;
     assign status_arr[1] = 8'h01;
-    assign status_arr[2] = ui_in;
-    assign status_arr[3] = uio_in;
     
     // SPI peripheral
     wire [SPI_ADDR_WIDTH-1:0] spi_addr;
